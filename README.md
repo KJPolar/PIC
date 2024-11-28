@@ -86,3 +86,70 @@ Renderiza imágenes de Pokémon en formato de cuadrícula.
 Código Principal
 1. index.html
 El punto de entrada de la aplicación. Integra los componentes y define el contenedor principal para la navegación dinámica.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aplicación Web Modular</title>
+</head>
+<body>
+   <custom-header></custom-header>
+   <custom-menu></custom-menu>
+   <custom-main>
+       <social-profile></social-profile>
+   </custom-main>
+   <custom-footer></custom-footer>
+
+   <script src="./components/header.js"></script>
+   <script src="./components/footer.js"></script>
+   <script src="./components/main.js"></script>
+   <script src="./components/menu.js"></script>
+   <script src="./components/social-profile.js"></script>
+   <script src="./components/custom-table.js"></script>
+   <script src="./components/gallery.js"></script>
+   <script>
+       document.addEventListener('navigate', (e) => {
+           const main = document.querySelector('custom-main');
+           switch (e.detail) {
+               case 'profile':
+                   main.innerHTML = '<social-profile></social-profile>';
+                   break;
+               case 'table':
+                   main.innerHTML = '<custom-table></custom-table>';
+                   break;
+               case 'gallery':
+                   main.innerHTML = '<gallery-page></gallery-page>';
+                   break;
+           }
+       });
+   </script>
+</body>
+</html>
+2. Componentes
+Consulta los archivos JavaScript en la carpeta components/ para ver el código detallado de cada componente.
+
+Estilo
+Cada componente tiene estilos encapsulados usando Shadow DOM, lo que evita conflictos con otros elementos en la página.
+
+APIs Utilizadas
+Usuarios (Tabla):
+
+URL: https://jsonplaceholder.typicode.com/users
+Datos: Nombre, correo, ciudad.
+Galería (Pokémon):
+
+URL: https://pokeapi.co/
+Datos: Imágenes y nombres de Pokémon.
+Pruebas
+Abre index.html en un navegador compatible.
+Navega entre las secciones utilizando el menú.
+Verifica:
+Encabezado y pie de página estáticos.
+Contenido dinámico de las secciones.
+Integración de datos de las APIs.
+Notas
+Este proyecto está diseñado para fines educativos.
+Se pueden extender los componentes o utilizar APIs adicionales según las necesidades.
+Licencia
+MIT License. Puedes utilizar y modificar este código libremente.
