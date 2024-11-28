@@ -18,6 +18,7 @@ Requisitos
 Navegador web moderno con soporte para ES6 y Web Components.
 Editor de texto o IDE (recomendado: Visual Studio Code).
 Acceso a Internet para cargar datos desde las APIs REST.
+<pre>
 project/
 ├── components/
 │   ├── header.js        # Lógica del encabezado.
@@ -28,6 +29,8 @@ project/
 │   ├── custom-table.js  # Tabla dinámica.
 │   └── gallery.js       # Galería de imágenes.
 ├── index.html           # Punto de entrada de la aplicación.
+</pre>
+
 
 
 Instalación
