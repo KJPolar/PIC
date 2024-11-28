@@ -21,25 +21,15 @@ Acceso a Internet para cargar datos desde las APIs REST.
 <pre>
 project/
 ├── components/
-│   ├── header.js        # Lógica del encabezado.
-│   ├── footer.js        # Lógica del pie de página.
-│   ├── main.js          # Contenedor principal.
-│   ├── menu.js          # Menú de navegación.
-│   ├── social-profile.js# Perfil de usuario.
-│   ├── custom-table.js  # Tabla dinámica.
-│   └── gallery.js       # Galería de imágenes.
-├── index.html           # Punto de entrada de la aplicación.
+│   ├── header.js        
+│   ├── footer.js        
+│   ├── main.js          
+│   ├── menu.js          
+│   ├── social-profile.js
+│   ├── custom-table.js  
+│   └── gallery.js       
+├── index.html           
 </pre>
-
-
-
-Instalación
-Clona el repositorio o descarga el código fuente.
-git clone https://github.com/usuario/aplicacion-web-modular.git
-cd aplicacion-web-modular
-Asegúrate de que todos los archivos están organizados según la estructura indicada.
-
-Abre el archivo index.html en tu navegador web.
 
 Uso
 Navegación
@@ -132,7 +122,7 @@ El punto de entrada de la aplicación. Integra los componentes y define el conte
 </body>
 </html>
 2. Componentes
-Consulta los archivos JavaScript en la carpeta components/ para ver el código detallado de cada componente.
+Se puede observar los componentes JavaScript en la carpeta components/ para ver el código detallado de cada componente.
 
 Estilo
 Cada componente tiene estilos encapsulados usando Shadow DOM, lo que evita conflictos con otros elementos en la página.
