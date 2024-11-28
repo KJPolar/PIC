@@ -28,7 +28,7 @@ project/
 │   ├── custom-table.js  # Tabla dinámica.
 │   └── gallery.js       # Galería de imágenes.
 ├── index.html           # Punto de entrada de la aplicación.
-└── app.js               # Lógica general de integración.
+
 
 Instalación
 Clona el repositorio o descarga el código fuente.
